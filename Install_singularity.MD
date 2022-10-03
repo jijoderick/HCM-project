@@ -14,21 +14,27 @@ sudo apt-get update && sudo apt-get install -y \
 ```
 ### Installing Go
 ```
-export VERSION=1.19.1 OS=linux ARCH=amd64 && \
+    export VERSION=1.19.1 OS=linux ARCH=amd64 && \
     wget https://dl.google.com/go/go$VERSION.$OS-$ARCH.tar.gz && \
     sudo tar -C /usr/local -xzvf go$VERSION.$OS-$ARCH.tar.gz && \
     rm go$VERSION.$OS-$ARCH.tar.gz
 ```
 set up your environment for Go.
 ```
-echo 'export GOPATH=${HOME}/go' >> ~/.bashrc && \
+    echo 'export GOPATH=${HOME}/go' >> ~/.bashrc && \
     echo 'export PATH=/usr/local/go/bin:${PATH}:${GOPATH}/bin' >> ~/.bashrc && \
     source ~/.bashrc
 ```
 ### Download Singularity from a release
 ```
-export VERSION=3.10.2 && # adjust this as necessary \
+    export VERSION=3.10.2 && # adjust this as necessary \
     wget https://github.com/sylabs/singularity/releases/download/v${VERSION}/singularity-ce-${VERSION}.tar.gz && \
     tar -xzf singularity-ce-${VERSION}.tar.gz && \
     cd singularity-ce-${VERSION}
+```
+### Compile singularity 
+```
+   ./mconfig && \
+    make -C ./builddir && \
+    sudo make -C ./builddir install
 ```
