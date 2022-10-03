@@ -1,6 +1,6 @@
 # Installing singularity in ubuntu 18.04
 ### Installing the dependencies
-'''
+```
 sudo apt-get update && sudo apt-get install -y \
     build-essential \
     uuid-dev \
@@ -11,4 +11,4 @@ sudo apt-get update && sudo apt-get install -y \
     pkg-config \
     git \
     cryptsetup-bin
-'''
+```
