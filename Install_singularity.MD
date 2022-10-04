@@ -45,3 +45,4 @@ This is not succesful completely
 ```
 
 ```
+# Installing singularity in centos 07
