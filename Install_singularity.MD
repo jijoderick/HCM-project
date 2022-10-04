@@ -44,7 +44,7 @@ This is not succesful completely
 
 ```
 
-```
+
 # Installing singularity in centos 07
 ```
 sudo yum update -y
