@@ -46,3 +46,17 @@ This is not succesful completely
 
 ```
 # Installing singularity in centos 07
+```
+sudo yum update -y
+sudo yum install -y epel-release
+sudo yum update -y
+```
+```
+ sudo yum install -y singularity-runtime singularity
+
+```
+Now it will be installed. 
+Can crosscheck the same by checking the version 
+```
+singularity --version
+```
