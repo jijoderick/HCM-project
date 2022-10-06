@@ -1,6 +1,9 @@
 from scipy.optimize import curve_fit
 import os
 import numpy as np
+#JDA
+##the following lines(7 to9 ) have to ucommented if you get error "no display name and no $DISPLAY environment variable"
+##
 #import matplotlib as mpl
 #if os.environ.get('DISPLAY','') == '':
 #    print('no display found. Using non-interactive Agg backend')
