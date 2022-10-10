@@ -4,6 +4,11 @@ import os
 import csv
 #from heArt.src.postprocessing.postprocessdatalib2 import *
 #from postprocessdatalib2 import *
+import matplotlib 
+if os.environ.get('DISPLAY','') == '':
+    print('no display found. Using non-interactive Agg backend')
+    matplotlib.use('Agg')
+	
 from matplotlib import pylab as plt
 from matplotlib import rc
 import numpy as np
