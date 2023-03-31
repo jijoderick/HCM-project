@@ -53,10 +53,18 @@ set up your environment for Go.
     make -C ./builddir && \
     sudo make -C ./builddir install
 ```
-### Mounting storage 
-This is not succesful completely
+### Some times you may encounter the following error
+```
+glib-2.0 headers are required to build conmon
+```
+In that case you can install the glib-2.0 headers using 
+```
+sudo apt-get install libglib2.0-dev
 ```
 
+### After installation of the singularity, loading the image in the container with mounting an external disk or partion
+```
+singularity shell --bind <partition__directory> <image_name>
 ```
 
 
