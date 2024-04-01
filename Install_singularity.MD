@@ -69,11 +69,11 @@ sudo singularity build <container_name>.img Singularity_fenics2017_msucompbiomec
 
 ### After building the image, for loading the image in the container by mounting an external disk or partition
 ```
-singularity shell --bind <partition__directory> <image_name>
+singularity shell --bind <partition__directory> <container_name>.img
 ```
 ## Or, on the other hand, loading the image in the container without mounting any external
 ```
-singularity run <image_name>
+singularity run <container_name>.img
 ```
 
 
