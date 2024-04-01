@@ -62,7 +62,7 @@ In that case you can install the glib-2.0 headers using
 sudo apt-get install libglib2.0-dev
 ```
 
-## After installation building a singularity container using the build file 
+# After installation of singularity, Build a singularity container using the build file 
 ```
 sudo singularity build <container_name>.img Singularity_fenics2017_msucompbiomechlab
 ```
