@@ -67,11 +67,11 @@ sudo apt-get install libglib2.0-dev
 sudo singularity build <container_name>.img Singularity_fenics2017_msucompbiomechlab
 ```
 
-### After building, loading the image in the container with mounting an external disk or partition
+### After building the image, for loading the image in the container by mounting an external disk or partition
 ```
 singularity shell --bind <partition__directory> <image_name>
 ```
-## Or on the other hand, loading the image in the container without mounting any external
+## Or, on the other hand, loading the image in the container without mounting any external
 ```
 singularity run <image_name>
 ```
